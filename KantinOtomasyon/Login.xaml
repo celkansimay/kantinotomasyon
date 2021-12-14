@@ -1,0 +1,33 @@
+﻿<Window x:Class="KantinOtomasyon.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KantinOtomasyon"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="499.999">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FF7BCBC0" Offset="0.55"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="0,0,382,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Kullanıcı Adı" HorizontalAlignment="Left" Margin="26,143,-44,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.493,-0.063" Grid.ColumnSpan="3"/>
+        <Label Content="Parola" HorizontalAlignment="Left" Margin="26,169,-44,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.493,-0.063" Grid.ColumnSpan="3"/>
+        <TextBox Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="77,146,-218,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" RenderTransformOrigin="-0.086,0.52" Grid.Column="2"/>
+        <TextBox Name="txtPassword"  HorizontalAlignment="Left" Height="23" Margin="77,181,-218,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.527,2.338" Grid.Column="2"/>
+        <Button Name="btnLogin" Content="Giriş Yap" HorizontalAlignment="Left" Margin="77,219,-218,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.499,-0.35" Click="btnLogin_Click" Grid.Column="2"/>
+        <!--<Image Grid.Column="1" HorizontalAlignment="Right" Height="100" Margin="10,24,-312,0" VerticalAlignment="Top" Width="364" Grid.ColumnSpan="2">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="bilgenesil_logo.png"/>
+            </Image.OpacityMask>
+        </Image>-->
+
+    </Grid>
+</Window>

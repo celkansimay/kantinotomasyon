@@ -1,0 +1,33 @@
+﻿<Window x:Class="KantinOtomasyon.StokListesi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KantinOtomasyon"
+        mc:Ignorable="d"
+        Title="StokListesi" Height="549.59" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGridView1" HorizontalAlignment="Left" Height="303" Margin="23,26,0,0" VerticalAlignment="Top" Width="748" SelectionChanged="dataGridView1_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Manufacturer}" Header="Ürün Adı" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Üretici" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Barcode}" Header="Barkod" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Price}" Header="Fiyat" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=StockCount}" Header="Stok Sayısı" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=TotalMaliyet}" Header="Toplam Maliyet" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=TotalGelir}" Header="Toplam Gelir" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=ToplamOngorulenKar}" Header="Toplam Öngörülen Kar" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Content="Toplam Maliyet" HorizontalAlignment="Left" Margin="464,362,0,0" VerticalAlignment="Top"/>
+        <Label Content="Toplam Gelir" HorizontalAlignment="Left" Margin="464,393,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label Content="Raftaki Ürün Toplamı" HorizontalAlignment="Left" Margin="464,424,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Toplam Kar" HorizontalAlignment="Left" Margin="464,455,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label Name="txtToplamMaliyet"  Content="Label" HorizontalAlignment="Left" Margin="595,362,0,0" VerticalAlignment="Top"/>
+        <Label Name="txtToplamGelir" Content="Label" HorizontalAlignment="Left" Margin="595,393,0,0" VerticalAlignment="Top"/>
+        <Label Name="txtRaftakiUrunTop" Content="Label" HorizontalAlignment="Left" Margin="595,424,0,0" VerticalAlignment="Top"/>
+        <Label Name="txtToplamKar" Content="Label" HorizontalAlignment="Left" Margin="595,463,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

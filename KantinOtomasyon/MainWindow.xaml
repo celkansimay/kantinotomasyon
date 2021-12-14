@@ -1,0 +1,29 @@
+﻿<Window x:Class="KantinOtomasyon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KantinOtomasyon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="413.609" Width="370.414">
+    <Menu Name="menu1" Height="22" Width="353" Margin="5,5,0,0" 
+              HorizontalAlignment="Left" VerticalAlignment="Top">
+        <MenuItem Header="Anasayfa" Click="anasayfaToolStripMenuItem_Click">
+        </MenuItem>
+        <MenuItem Header="Stok Hareketleri">
+            <MenuItem Header="Stok Listesi" Click="ÜrünlerToolStripMenuItem_Click"/>
+            <MenuItem Header="Stok Girişi" Click="stokGirişiToolStripMenuItem_Click" />
+            <MenuItem Header="Stok Hareketleri" Click="StokHareketleriToolStripMenuItem1_Click"/>
+            <MenuItem Header="Aç" >
+                <MenuItem Header="Listele" Click="listeleToolStripMenuItem_Click"/>
+                <MenuItem Header="Ürün Ekle" Click="ürünEkleToolStripMenuItem_Click"/>
+            </MenuItem>
+        </MenuItem>
+        <MenuItem Header="Kullanıcı">
+            <MenuItem Header="Listele" Click="ListeleToolStripMenuItem1_Click" />
+            <MenuItem Header="Ekle" Click="EkleToolStripMenuItem_Click"/>
+        </MenuItem>
+        <MenuItem Header="Satış Yap" Click="KToolStripMenuItem_Click" />
+        <MenuItem Header="Bakiye Ekle" Click="BakiyeEkleToolStripMenuItem_Click"/>
+    </Menu>
+</Window>

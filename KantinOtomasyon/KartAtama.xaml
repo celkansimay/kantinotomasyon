@@ -1,0 +1,26 @@
+﻿<Window x:Class="KantinOtomasyon.KartAtama"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KantinOtomasyon"
+        mc:Ignorable="d"
+        Title="Kart Atama" Height="450" Width="353.689">
+    <Grid>
+        <Label Content="Adı" HorizontalAlignment="Left" Margin="29,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.609,0.458" Width="135"/>
+        <Label Content="Soyadı" HorizontalAlignment="Left" Margin="29,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.609,0.458" Width="135"/>
+        <Label Content="Sınıfı" HorizontalAlignment="Left" Margin="29,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.609,0.458" Width="135"/>
+        <Label Content="Veli Adı" HorizontalAlignment="Left" Margin="29,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.609,0.458" Width="135"/>
+        <Label Content="Okul Adı" HorizontalAlignment="Left" Margin="29,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.609,0.458" Width="135"/>
+        <Label Content="Kart Numarası" HorizontalAlignment="Left" Margin="29,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.609,0.458" Width="135"/>
+        <TextBox Name="txtName" HorizontalAlignment="Left" Height="23" Margin="132,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtSurname" HorizontalAlignment="Left" Height="23" Margin="132,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtClassName" HorizontalAlignment="Left" Height="23" Margin="132,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtParentName" HorizontalAlignment="Left" Height="23" Margin="132,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtSchoolName" HorizontalAlignment="Left" Height="23" Margin="132,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtCardNumber" HorizontalAlignment="Left" Height="23" Margin="132,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <Button Content="Kaydet" HorizontalAlignment="Left" Margin="132,252,0,0" VerticalAlignment="Top" Width="136" RenderTransformOrigin="-0.302,-0.111" Height="27" Click="Button_Click"/>
+        <Label Content="Öğrenci Kart Atama" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Width="239" Height="38"/>
+
+    </Grid>
+</Window>

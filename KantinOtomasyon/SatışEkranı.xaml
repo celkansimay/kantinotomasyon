@@ -1,0 +1,31 @@
+﻿<Window x:Class="KantinOtomasyon.SatışEkranı"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KantinOtomasyon"
+        mc:Ignorable="d"
+        Title="SatışEkranı" Height="605.401" Width="794.389">
+    <Grid Margin="0,0,-142,-75">
+        <Label Content="Ürün Satış Ekranı" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Width="136"/>
+        <Label Content="Ürün Barkod No" HorizontalAlignment="Left" Margin="26,68,0,0" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtBarcode" HorizontalAlignment="Left" Height="23" Margin="142,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Ekle" HorizontalAlignment="Left" Margin="352,74,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid HorizontalAlignment="Left" Margin="26,109,0,225" Width="727" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Manufacturer}" Header="Barkod No" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Name}" Header="Marka" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Barcode}" Header="Ürün Adı" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Price}" Header="Adet" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Price}" Header="Fiyat" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Kart Numarası" HorizontalAlignment="Left" Margin="26,433,0,0" VerticalAlignment="Top" Width="136"/>
+        <TextBox Name="txtCardNumber" HorizontalAlignment="Left" Height="23" Margin="142,433,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" TextChanged="TextBox_TextChanged_1"/>
+        <Label Content="Toplam Fiyat" HorizontalAlignment="Left" Margin="508,429,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button Content="Satışı Gerçekleştir" HorizontalAlignment="Left" Margin="26,488,0,0" VerticalAlignment="Top" Width="113" Height="43" Click="Button_Click"/>
+        <Button Content="Temizle" HorizontalAlignment="Left" Margin="314,488,0,0" VerticalAlignment="Top" Width="113" Height="43" Click="Button_Click_1"/>
+        <Button Content="Kapat" HorizontalAlignment="Left" Margin="577,488,0,0" VerticalAlignment="Top" Width="113" Height="43"/>
+        <Label Name="lblTotalPrice" Target="{Binding ElementName=lblTotalPrice}"  Content="" HorizontalAlignment="Left" Margin="652,429,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.185,0.138"/>
+    </Grid>
+</Window>

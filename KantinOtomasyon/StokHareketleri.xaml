@@ -1,0 +1,22 @@
+﻿<Window x:Class="KantinOtomasyon.StokHareketleri"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KantinOtomasyon"
+        mc:Ignorable="d"
+        Title="StokHareketleri" Height="450" Width="610.962">
+    <Grid>
+        <DataGrid   Name="dgStockMov"  
+                      CanUserReorderColumns="True" CanUserResizeColumns="True" 
+          CanUserResizeRows="False" CanUserSortColumns="True" SelectionChanged="dgStockMov_SelectionChanged" Margin="29,31,28,26" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=InputOutput}" Header="Giriş/Çıkış" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=Quantity}" Header="Miktar" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=UnitPrice}" Header="Birim Fiyatı" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Path=TotalPrice}" Header="Toplam Fiyatı" Width="Auto"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>
